@@ -107,7 +107,7 @@ export default function Menu() {
   }
 
   const handleWhatsAppOrder = (itemName: string) => {
-    const phoneNumber = "1234567890" // Replace with actual WhatsApp number
+    const phoneNumber = "971507940372" // Replace with actual WhatsApp number
     const message = encodeURIComponent(
       `Hello! I would like to order ${itemName} from Hobby Kitchen. Please let me know the availability and price.`,
     )

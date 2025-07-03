@@ -47,13 +47,13 @@ export default function Header() {
         } ${isHidden ? "-translate-y-full" : "translate-y-0"}`}
       >
         <div className="container mx-auto flex items-center justify-between px-px pl-0 pr-0">
-          <a href="#" className="flex items-center flex-row shadow-none">
+          <a href="#" className="flex items-center flex-row shadow-none ml-2.5">
             <Image
               src="/logo-white.png"
               alt="Hobby Kitchen Logo"
               width={400}
               height={120}
-              className={`w-auto transition-all duration-300 ${isScrolled ? "h-14" : "h-20"}`}
+              className={`w-auto transition-all duration-300 ${isScrolled ? "h-16" : "h-20"}`}
               priority
             />
           </a>
@@ -116,7 +116,7 @@ export default function Header() {
             </div>
           </nav>
 
-          <button onClick={toggleMenu} className="md:hidden p-3">
+          <button onClick={toggleMenu} className="md:hidden p-3 mr-2.5">
             <div className="space-y-1">
               <span className="block w-8 h-0.5 bg-white transition-transform duration-300"></span>
               <span className="block w-8 h-0.5 bg-white transition-transform duration-300"></span>

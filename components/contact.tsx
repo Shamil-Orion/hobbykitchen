@@ -4,7 +4,7 @@ import { Phone, Clock, Mail } from "lucide-react"
 
 export default function Contact() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "919846371407"
+    const phoneNumber = "971507940372"
     const message = encodeURIComponent(
       "Hi! I’d like to place an order from your menu. Could you let me know what details you need?"
     )
