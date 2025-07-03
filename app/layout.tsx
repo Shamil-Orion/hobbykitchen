@@ -10,8 +10,8 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Hobby Kitchen - Amazing & Delicious Food",
-  description: "Experience amazing and delicious food at Hobby Kitchen restaurant",
+  title: "Hobby Kitchen - From Hobby To Yum",
+  description: "Creating delicious moments, one recipe at a time.",
     generator: 'v0.dev'
 }
 
