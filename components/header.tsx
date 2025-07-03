@@ -70,7 +70,7 @@ export default function Header() {
               <X className="w-5 h-5" />
             </button>
 
-            <div className="pt-20 px-8 md:pt-0 md:px-0 bg-primary-purple sm:bg-transparent">
+            <div className="pt-20 px-8 md:pt-0 md:px-0">
               <a href="#" className="block mb-16 md:hidden">
                 <Image
                   src="/logo-white.png"
@@ -113,24 +113,6 @@ export default function Header() {
                   </a>
                 </li>
               </ul>
-
-              <div className="mt-20 text-center md:hidden">
-                <h3 className="text-2xl font-serif mb-4">Visit Us</h3>
-                <address className="not-italic mb-4 text-gray-300">
-                  Restaurant St, Delicious City,
-                  <br />
-                  London 9578, UK
-                </address>
-                <p className="mb-4 text-gray-300">Open: 9.30 am - 2.30pm</p>
-                <a href="mailto:booking@hobbykitchen.com" className="hover-underline text-gray-300">
-                  booking@hobbykitchen.com
-                </a>
-                <div className="separator mx-auto my-8"></div>
-                <p className="font-bold mb-2 text-gold">Booking Request</p>
-                <a href="tel:+88123123456" className="text-2xl hover-underline text-white">
-                  +88-123-123456
-                </a>
-              </div>
             </div>
           </nav>
 
