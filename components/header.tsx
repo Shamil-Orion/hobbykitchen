@@ -70,7 +70,7 @@ export default function Header() {
               <X className="w-5 h-5" />
             </button>
 
-            <div className="pt-20 px-8 md:pt-0 md:px-0">
+            <div className="pt-20 px-8 md:pt-0 md:px-0 bg-primary-purple sm:bg-transparent">
               <a href="#" className="block mb-16 md:hidden">
                 <Image
                   src="/logo-white.png"
