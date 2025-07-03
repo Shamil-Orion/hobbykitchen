@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="container mx-auto relative z-10 px-4">
+      <main>
         <Hero />
         <Service />
         <About />

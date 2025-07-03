@@ -46,20 +46,20 @@ export default function Header() {
           isScrolled ? "bg-primary-purple py-3" : "bg-transparent py-6"
         } ${isHidden ? "-translate-y-full" : "translate-y-0"}`}
       >
-        <div className="container mx-auto px-5 flex items-center justify-between">
+        <div className="container mx-auto flex items-center justify-between px-px pl-0 pr-0">
           <a href="#" className="flex items-center flex-row shadow-none">
             <Image
               src="/logo-white.png"
               alt="Hobby Kitchen Logo"
-              width={280}
-              height={90}
+              width={400}
+              height={120}
               className={`w-auto transition-all duration-300 ${isScrolled ? "h-14" : "h-20"}`}
               priority
             />
           </a>
 
           <nav
-            className={`fixed top-0 left-0 h-full w-80 bg-primary-purple transform transition-transform duration-500 z-50 ${
+            className={`fixed top-0 left-0 h-full w-80 bg-primary-dark transform transition-transform duration-500 z-50 ${
               isMenuOpen ? "translate-x-0" : "-translate-x-full"
             } md:static md:transform-none md:bg-transparent md:w-auto md:h-auto`}
           >
@@ -81,14 +81,14 @@ export default function Header() {
                 />
               </a>
 
-              <ul className="space-y-4 md:flex md:space-y-0 md:space-x-8 md:items-center font-light">
+              <ul className="space-y-4 md:flex md:space-y-0 md:space-x-8 md:items-center font-light text-sm">
                 <li>
                   <a
                     href="#home"
                     className="block py-2 hover-underline text-gold md:text-white uppercase tracking-wider font-bold active"
                   >
                     <div className="separator inline-block mr-2 md:hidden"></div>
-                    <span>Home</span>
+                    <span className="">Home</span>
                   </a>
                 </li>
                 <li>

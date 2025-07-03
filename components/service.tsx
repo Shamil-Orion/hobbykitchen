@@ -6,17 +6,17 @@ import Image from "next/image"
 const services = [
   {
     image:
-      "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuY2FrZXN8ZW58MHwxfDB8fHwy",
     title: "Starters",
     link: "#menu",
   },
   {
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    title: "Main Course",
+    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlyaXlhbml8ZW58MHwxfDB8fHwy",
+    title: "Main course",
     link: "#menu",
   },
   {
-    image: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image: "https://images.unsplash.com/photo-1515037893149-de7f840978e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJvd25pZXN8ZW58MHwxfDB8fHwy",
     title: "Desserts",
     link: "#menu",
   },
@@ -44,7 +44,7 @@ export default function Service() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="section service bg-[#1b1b1b] text-center relative overflow-hidden">
+    <section ref={sectionRef} className="section service bg-black/50 text-center relative overflow-hidden">
       {/* Background shapes */}
       <Image
         src="/textures/shape-1.png"
@@ -63,13 +63,14 @@ export default function Service() {
 
       <div className="container mx-auto px-4 relative z-10">
         <p className="section-subtitle label-2 text-gold-crayola uppercase tracking-widest animate-on-scroll mb-2">
-          Flavors For Hobby kitchen
+          Homegrown. Homemade.
         </p>
         <h2 className="headline-1 section-title font-forum text-white text-4xl md:text-5xl mb-4 animate-on-scroll">
           We Offer Top Notch
         </h2>
         <p className="section-text text-gray-400 max-w-2xl mx-auto mb-12 animate-on-scroll">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry’s standard dummy text ever.
+          At Hobby Kitchen, every dish is a blend of passion, flavor, and artistry.
+From appetizing starters to decadent desserts, we bring you food that feels like home — elevated.
         </p>
 
         <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
@@ -80,14 +81,14 @@ export default function Service() {
                 style={{ aspectRatio: "285 / 336" }}
               >
                 {/* Rotating pattern behind image */}
-                <div className="absolute inset-0 flex items-center justify-center z-0 overflow-hidden">
-                  <div className="rotate-anim opacity-30 scale-150">
+                <div className="absolute inset-0 flex items-center justify-center z-0">
+                  <div className="rotate-anim opacity-20">
                     <Image
                       src="/img-pattern.svg"
-                      alt="pattern"
-                      width={300}
-                      height={300}
-                      className="w-full h-full object-contain text-gold"
+                      alt=""
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </div>

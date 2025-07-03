@@ -42,6 +42,13 @@ export default function About() {
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
 
+  const scrollToContact = () => {
+  const contactSection = document.getElementById("contact")
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" })
+  }
+}
+
   return (
     <section ref={sectionRef} id="about" className="py-20 text-center relative bg-primary-purple overflow-hidden">
       {/* Large Static Texture overlays */}
@@ -67,15 +74,13 @@ export default function About() {
             </div>
 
             <div className="mb-6 animate-on-scroll">
-              <p className="font-bold mb-2 text-gold">Book Through Call</p>
-              <a href="tel:+919846371407" className="text-2xl hover-underline text-white">
-                +91 9846371407
-              </a>
+              
+              
             </div>
 
-            <button className="btn-primary btn-text-animate animate-on-scroll">
-              <span className="text-1">Read More</span>
-              <span className="text-2">Read More</span>
+            <button  onClick={scrollToContact} className="btn-primary btn-text-animate animate-on-scroll">
+              <span className="text-1">Contact</span>
+              <span className="text-2">Contact</span>
             </button>
           </div>
 
@@ -93,13 +98,17 @@ export default function About() {
 
               
 
-              <div className="absolute -top-16 -right-8">
-                <div className="w-32 h-32 bg-accent-yellow rounded-full flex items-center justify-center">
-                  <svg className="text-primary-dark h-[80] w-[80]" fill="currentColor" viewBox="0 0 20 20">
-                    
-                  </svg>
-                </div>
-              </div>
+             <div className="absolute -top-16 -right-8">
+  <div className="w-32 h-32 bg-accent-yellow rounded-full flex items-center justify-center overflow-hidden">
+    <img
+      src="/fork.png"
+      alt="Cooking Fork"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
+
             </div>
           </div>
         </div>

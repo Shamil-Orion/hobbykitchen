@@ -13,14 +13,14 @@ const slides = [
     text: "Creating delicious moments, one recipe at a time.",
   },
   {
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    image: "https://images.unsplash.com/photo-1601740982034-56bc80e986ee?q=80&w=1329&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subtitle: "Hobby Kitchen",
     title: "Made with Heart, Served with Soul",
     text: "Handcrafted meals made with warmth, passion, and a pinch of joy.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1608393189287-0bc2191c7e86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subtitle: "Hobby Kitchen",
     title: "Bringing Homemade to Life",
     text: "Wholesome, comforting, and always made with a personal touch.",
@@ -132,8 +132,8 @@ export default function Hero() {
           className={`btn-primary btn-text-animate slider-reveal py-0 my-10 ${currentSlide >= 0 ? "active" : ""}`}
           style={{ animationDelay: "2000ms" }}
         >
-          <span className="text-1">View Our Menu</span>
-          <span className="text-2">View Our Menu</span>
+          <span className="text-1">View Menu</span>
+          <span className="text-2">View Menu</span>
         </button>
       </div>
 

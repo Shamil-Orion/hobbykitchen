@@ -116,18 +116,20 @@ export default function Menu() {
   }
 
   return (
-    <section ref={sectionRef} id="menu" className="container mx-auto px-4 relative z-10 shadow-2xl pt-[px]">
+    <section ref={sectionRef} id="menu" className="py-20 bg-primary-dark relative overflow-hidden">
       {/* Texture overlays */}
       <div className="absolute top-10 left-10 opacity-8">
-        <Image src="/textures/shape-5.png" alt="" width={150} height={200} className="move-anim" />
+        <Image src="/textures/shape-5.png" alt="" width={400}
+  height={670} className="move-anim" />
       </div>
       <div className="absolute bottom-10 right-10 opacity-8">
-        <Image src="/textures/shape-6.png" alt="" width={120} height={160} className="move-anim" />
+        <Image src="/textures/shape-6.png" alt=""  width={400}
+  height={670} className="move-anim" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 shadow-2xl mr-0.5">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="section-subtitle mb-4 animate-on-scroll">Special Selection</p>
+          <p className="section-subtitle mb-4 animate-on-scroll">Curated Selection</p>
           <h2 className="text-4xl md:text-5xl font-forum text-white animate-on-scroll">Our Delicious Menu</h2>
           <div className="flex justify-center items-center gap-2 mt-6">
             <div className="separator"></div>
@@ -159,7 +161,7 @@ export default function Menu() {
                 </div>
                 <div className="text-gold group-hover:text-white transition-colors">
                   {expandedSections[section.category] ? (
-                    <ChevronUp className="container mx-auto px-4 relative z-10 shadow-2xl" />
+                    <ChevronUp className="w-6 h-6" />
                   ) : (
                     <ChevronDown className="w-6 h-6" />
                   )}
@@ -203,7 +205,13 @@ export default function Menu() {
           ))}
         </div>
 
-
+        <div className="text-center mt-16 animate-on-scroll">
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            
+            
+          </div>
+        </div>
       </div>
     </section>
   )
