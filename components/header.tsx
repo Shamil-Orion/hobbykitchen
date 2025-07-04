@@ -53,7 +53,7 @@ export default function Header() {
               alt="Hobby Kitchen Logo"
               width={400}
               height={120}
-              className={`w-auto transition-all duration-300 ${isScrolled ? "h-16" : "h-20"}`}
+              className={`w-auto transition-all duration-300 ${isScrolled ? "h-16" : "h-28"}`}
               priority
             />
           </a>
@@ -77,7 +77,7 @@ export default function Header() {
                   alt="Hobby Kitchen Logo"
                   width={220}
                   height={75}
-                  className="h-16 w-auto mx-auto"
+                  className="h-24 w-auto mx-auto"
                 />
               </a>
 

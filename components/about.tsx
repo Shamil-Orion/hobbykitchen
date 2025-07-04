@@ -87,7 +87,7 @@ export default function About() {
           <div className="order-1 lg:order-2 relative animate-on-scroll">
             <div className="relative">
               <Image
-                src="/chef-image.jpeg"
+                src="/chefimage.png"
                 alt="Hobby Kitchen Chef"
                 width={570}
                 height={570}
@@ -95,18 +95,6 @@ export default function About() {
                 data-parallax-speed="1"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-
-              
-
-             <div className="absolute -top-16 -right-8">
-  <div className="w-32 h-32 bg-accent-yellow rounded-full flex items-center justify-center overflow-hidden">
-    <img
-      src="/fork.png"
-      alt="Cooking Fork"
-      className="w-full h-full object-cover"
-    />
-  </div>
-</div>
 
 
             </div>

@@ -131,7 +131,6 @@ export default function Contact() {
                 <p className="text-gray-400 text-sm mb-2">
                   Quick Response • Easy Ordering • Real-time Updates
                 </p>
-                <p className="text-gold font-bold">Available 9 AM - 10 PM Daily</p>
               </div>
             </div>
           </div>

@@ -10,10 +10,45 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Hobby Kitchen - From Hobby To Yum",
+  title: "Hobby Kitchen - From Hobby to Yum",
   description: "Creating delicious moments, one recipe at a time.",
-    generator: 'v0.dev'
-}
+  generator: "Next.js",
+  keywords: [
+    "Hobby Kitchen",
+    "home cooking",
+    "easy recipes",
+    "Indian food blog",
+    "homemade dishes",
+    "South Indian recipes",
+    "Anagha R Menon",
+    "quick dinner ideas",
+    "healthy meals",
+    "vegetarian cooking",
+    "non-veg recipes",
+    "cooking inspiration",
+    "kitchen hobby blog",
+    "delicious Indian food",
+    "hobbykitchen.co.in"
+  ],
+  authors: [{ name: "Anagha R Menon", url: "https://hobbykitchen.co.in" }],
+  openGraph: {
+    title: "Hobby Kitchen - From Hobby to Yum",
+    description: "Creating delicious moments, one recipe at a time.",
+    url: "https://hobbykitchen.co.in",
+    siteName: "Hobby Kitchen",
+    images: [
+      {
+        url: "/og-image.jpeg", 
+        width: 1200,
+        height: 630,
+        alt: "Delicious dishes from Hobby Kitchen",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  metadataBase: new URL("https://hobbykitchen.co.in"),
+};
 
 export default function RootLayout({
   children,
@@ -23,15 +58,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
-          rel="stylesheet"
-        />
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
       <body className={`${dmSans.variable} font-sans`}>{children}</body>
     </html>
   )

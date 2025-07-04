@@ -11,16 +11,21 @@ const menuData = [
       "French Fries",
       "Chicken Nuggets",
       "Garlic Bread",
-      "Stir Fry Hotdogs",
       "Crunchy Masala Pasta",
       "Potato Wedges",
       "Potato Balls",
-      "Toast",
       "Hot Cheetos Mozzarella Sticks",
       "Homemade Kurkure",
+      "Chicken Wings",
+    ],
+  },
+    {
+    category: "Breakfast",
+    items: [
+      "Stir Fry Hotdogs",
+      "Toast",
       "French Toast",
       "Pancakes",
-      "Chicken Wings",
     ],
   },
   {
@@ -35,8 +40,7 @@ const menuData = [
       "Chicken Biryani",
       "Rogan Josh",
       "Beef Roast",
-      "Sambar",
-      "Biryani",
+      "Kerala Style Naadan Sambar",
     ],
   },
   {
@@ -150,22 +154,29 @@ export default function Menu() {
                 onClick={() => toggleSection(section.category)}
                 className="w-full px-6 py-4 flex items-center justify-between bg-gradient-to-r from-primary-purple to-accent-purple/30 hover:from-accent-purple/30 hover:to-primary-purple transition-all duration-300 group"
               >
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 bg-accent-yellow rounded-full group-hover:scale-110 transition-transform"></div>
-                  <h3 className="text-2xl font-forum text-white group-hover:text-gold transition-colors">
-                    {section.category}
-                  </h3>
-                  <span className="text-sm text-gray-400 bg-primary-dark px-2 py-1 rounded">
-                    {section.items.length} items
-                  </span>
-                </div>
-                <div className="text-gold group-hover:text-white transition-colors">
-                  {expandedSections[section.category] ? (
-                    <ChevronUp className="w-6 h-6" />
-                  ) : (
-                    <ChevronDown className="w-6 h-6" />
-                  )}
-                </div>
+<div className="flex items-center justify-between w-full">
+  {/* Left: dot + title */}
+  <div className="flex items-center gap-4">
+    <div className="w-3 h-3 bg-accent-yellow rounded-full group-hover:scale-110 transition-transform"></div>
+    <h3 className="text-2xl font-forum text-white group-hover:text-gold transition-colors">
+      {section.category}
+    </h3>
+  </div>
+
+  {/* Right: count + chevron */}
+  <div className="flex items-center gap-3">
+    <span className="text-sm text-gray-400 bg-primary-dark px-2 py-1 rounded shrink-0">
+      {section.items.length} items
+    </span>
+    <div className="text-gold group-hover:text-white transition-colors">
+      {expandedSections[section.category] ? (
+        <ChevronUp className="w-6 h-6" />
+      ) : (
+        <ChevronDown className="w-6 h-6" />
+      )}
+    </div>
+  </div>
+</div>
               </button>
 
               {/* Section Content */}

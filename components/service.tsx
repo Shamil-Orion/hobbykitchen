@@ -6,21 +6,24 @@ import Image from "next/image"
 const services = [
   {
     image:
-      "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuY2FrZXN8ZW58MHwxfDB8fHwy",
+      "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=400&h=300&fit=crop&auto=format&q=60",
     title: "Starters",
     link: "#menu",
   },
   {
-    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlyaXlhbml8ZW58MHwxfDB8fHwy",
+    image:
+      "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&h=300&fit=crop&auto=format&q=60",
     title: "Main course",
     link: "#menu",
   },
   {
-    image: "https://images.unsplash.com/photo-1515037893149-de7f840978e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJvd25pZXN8ZW58MHwxfDB8fHwy",
+    image:
+      "https://images.unsplash.com/photo-1515037893149-de7f840978e2?w=400&h=300&fit=crop&auto=format&q=60",
     title: "Desserts",
     link: "#menu",
   },
-]
+];
+
 
 export default function Service() {
   const sectionRef = useRef<HTMLElement>(null)
