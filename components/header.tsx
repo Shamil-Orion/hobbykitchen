@@ -20,7 +20,6 @@ export default function Header() {
         setIsScrolled(false)
       }
 
-      // Hide header when scrolling down, show when scrolling up
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsHidden(true)
       } else {
@@ -37,6 +36,12 @@ export default function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
     document.body.classList.toggle("nav-active")
+  }
+
+  const handleLinkClick = () => {
+    if (isMenuOpen) {
+      toggleMenu()
+    }
   }
 
   return (
@@ -85,20 +90,29 @@ export default function Header() {
                 <li>
                   <a
                     href="#home"
+                    onClick={handleLinkClick}
                     className="block py-2 hover-underline text-gold md:text-white uppercase tracking-wider font-bold active"
                   >
                     <div className="separator inline-block mr-2 md:hidden"></div>
-                    <span className="">Home</span>
+                    <span>Home</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#menu" className="block py-2 hover-underline text-white uppercase tracking-wider font-bold">
+                  <a
+                    href="#menu"
+                    onClick={handleLinkClick}
+                    className="block py-2 hover-underline text-white uppercase tracking-wider font-bold"
+                  >
                     <div className="separator inline-block mr-2 md:hidden"></div>
                     <span>Menus</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="block py-2 hover-underline text-white uppercase tracking-wider font-bold">
+                  <a
+                    href="#about"
+                    onClick={handleLinkClick}
+                    className="block py-2 hover-underline text-white uppercase tracking-wider font-bold"
+                  >
                     <div className="separator inline-block mr-2 md:hidden"></div>
                     <span>About Us</span>
                   </a>
@@ -106,6 +120,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#contact"
+                    onClick={handleLinkClick}
                     className="block py-2 hover-underline text-white uppercase tracking-wider font-bold"
                   >
                     <div className="separator inline-block mr-2 md:hidden"></div>
@@ -125,8 +140,6 @@ export default function Header() {
           </button>
         </div>
       </header>
-
-      {isMenuOpen}
     </>
   )
 }
